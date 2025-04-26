@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Edward Photography</title>
+    <link href="/src/input.css" rel="stylesheet">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold">Edward Photography</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <button id="logout-button" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-16 min-h-screen">
+        <!-- Hero Section -->
+        <div class="relative py-20">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl transform -rotate-12"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl transform rotate-12"></div>
+            </div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8">Welcome to Your Dashboard</h2>
+                
+                <!-- Featured Content -->
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Featured Photography</h3>
+                    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                        <iframe 
+                            src="https://64258db8bde3a.site123.me/" 
+                            class="w-full h-[500px] rounded-lg"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4">Recent Uploads</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-700/50 p-4 rounded-lg">
+                                <p class="text-gray-300">New collection added: "Urban Landscapes"</p>
+                            </div>
+                            <div class="bg-gray-700/50 p-4 rounded-lg">
+                                <p class="text-gray-300">Portfolio update: "Nature Series"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4">Community Updates</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-700/50 p-4 rounded-lg">
+                                <p class="text-gray-300">New tutorial available: "Mastering Light"</p>
+                            </div>
+                            <div class="bg-gray-700/50 p-4 rounded-lg">
+                                <p class="text-gray-300">Upcoming workshop: "Portrait Photography"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html> 
